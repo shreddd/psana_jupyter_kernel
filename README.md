@@ -48,5 +48,7 @@ Or simply copy the file provided in this repository, and chage it accordingly to
 cp $DIST/kernel.json $HOME/.local/share/jupyter/kernels/psana2_py37
 ```
 
+The last step consists in changing the variable `DIST` in [start_kernel.sh#L3](https://github.com/llanaproject/jupyter_kernel/blob/master/start_kernel.sh#L3) to its correct path. 
+
 At this point, you might be able to go to https://jupyter.nersc.gov and
 `Psana_python37` should be shown as a kernel in your Jupyter Lab.
