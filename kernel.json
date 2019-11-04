@@ -1,0 +1,9 @@
+{
+ "argv": [
+   "/global/common/software/lcls/psana/start_kernel.sh",
+  "-f",
+  "{connection_file}"
+ ],
+ "display_name": "Psana_python37",
+ "language": "python"
+}
