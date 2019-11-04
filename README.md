@@ -10,8 +10,8 @@ This repository contains files needed to create a conda environment that can be 
 ## Building the Conda environment
 
 ```
-git clone https://github.com/llanaproject/jupyter_kernel
-cd jupyter_kernel
+git clone https://github.com/llanaproject/psana_jupyter_kernel
+cd psana_jupyter_kernel
 export DIST=$PWD
 chmod +x build_from_scratch.sh
 ./build_from_scratch.sh
