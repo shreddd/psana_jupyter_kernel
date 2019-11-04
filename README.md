@@ -42,7 +42,7 @@ This will create a directory on `$HOME/.local/share/jupyter/kernels/psana2_py37`
 }
 ```
 
-Or simply copy the file provided in this repository: 
+Or simply copy the file provided in this repository, and chage it accordingly to your needs: 
 
 ```
 cp $DIST/kernel.json $HOME/.local/share/jupyter/kernels/psana2_py37
