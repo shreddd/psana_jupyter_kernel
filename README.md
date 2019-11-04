@@ -24,7 +24,7 @@ account:
 
 ```
 source $DIST/env.sh
-conda activate conda activate $DIST/psana2_py37
+conda activate $DIST/psana2_py37
 python -m ipykernel install --user --name psana2_py37 --display-name psana2_py37
 ```
 
