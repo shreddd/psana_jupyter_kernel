@@ -19,6 +19,9 @@ cp kernel.json $HOME/.local/share/jupyter/kernels/psana2_py37
 
 Following these steps will make the kernel available in your list of kernels:
 
+![alt text](img/psana_kernel.png "PSANA kernel")
+
+
 ## Building from scratch
 
 In the sections below we show how to build this conda environment from scratch. There are three files to accomplish it:
