@@ -4,6 +4,6 @@
   "-f",
   "{connection_file}"
  ],
- "display_name": "Psana_python37",
+ "display_name": "psana2_py37",
  "language": "python"
 }

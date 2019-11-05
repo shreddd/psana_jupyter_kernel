@@ -1,13 +1,33 @@
 # PSANA Jupyter Kernel
 
-This repository contains files needed to create a conda environment that can be used as a Jupyter Lab kernel at NERSC. It provides three files:
+This repository contains instructions on how to build, install and use a Conda
+environment as a python Jupyter Lab kernel.
+
+## NERSC usage
+
+To activate the pre-built PSANA conda environment to use it at
+https://jupyter.nersc.gov, just follow these instructions:
+
+```
+git clone https://github.com/llanaproject/psana_jupyter_kernel
+cd psana_jupyter_kernel
+module load python/3.7-anaconda-2019.07
+pip install ipykernel
+python -m ipykernel install --user --name psana2_py37 --display-name psana2_py37
+cp kernel.json $HOME/.local/share/jupyter/kernels/psana2_py37
+```
+
+Following these steps will make the kernel available in your list of kernels:
+
+## Building from scratch
+
+In the sections below we show how to build this conda environment from scratch. There are three files to accomplish it:
 
 1. `build_from_scratch.sh` file that clone psana2 and install it to operate in NERSC. 
 2. A Conda yaml file called `env_create.yaml` to create a Conda environment for PSANA. 
 3. A `kernel.json` example file to use the Conda environment as a Jupyter Lab kernel. 
 
-
-## Building the Conda environment
+### Conda environment
 
 ```
 git clone https://github.com/llanaproject/psana_jupyter_kernel
@@ -17,7 +37,7 @@ chmod +x build_from_scratch.sh
 ./build_from_scratch.sh
 ```
 
-## Installing the Conda environment as a Jupyter Lab kernel
+### Installing the Conda environment as a Jupyter Lab kernel
 
 After building the environment, the kernel has to be activated in our NERSC
 account:
