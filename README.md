@@ -1,11 +1,11 @@
 # PSANA Jupyter Kernel
 
-This repository contains instructions on how to build, install and use a Conda
+This repository contains instructions on how to build, install and use a PSANA Conda
 environment as a python Jupyter Lab kernel.
 
 ## NERSC usage
 
-To activate the pre-built PSANA conda environment to use it at
+To activate the pre-built PSANA conda environment at NERSC to use it at
 https://jupyter.nersc.gov, just follow these instructions:
 
 ```
@@ -17,14 +17,15 @@ python -m ipykernel install --user --name psana2_py37 --display-name psana2_py37
 cp kernel.json $HOME/.local/share/jupyter/kernels/psana2_py37
 ```
 
-Following these steps will make the kernel available in your list of kernels:
+Now, you should be able to select PSANA from your list of kernels:
 
 ![alt text](img/psana_kernel.png "PSANA kernel")
 
 
 ## Building from scratch
 
-In the sections below we show how to build this conda environment from scratch. There are three files to accomplish it:
+In the sections below we show how to build this conda environment from scratch. There are three files 
+to make it:
 
 1. `build_from_scratch.sh` file that clone psana2 and install it to operate in NERSC. 
 2. A Conda yaml file called `env_create.yaml` to create a Conda environment for PSANA. 
