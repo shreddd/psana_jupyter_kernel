@@ -27,7 +27,7 @@ Now, you should be able to select PSANA from your list of kernels:
 In the sections below we show how to build this conda environment from scratch. There are three files 
 to make it:
 
-1. `build_from_scratch.sh` file that clone psana2 and install it to operate in NERSC. 
+1. `build_from_scratch.sh` file that clones and build psana2 to work with NERSC infrastructure. 
 2. A Conda yaml file called `env_create.yaml` to create a Conda environment for PSANA. 
 3. A `kernel.json` example file to use the Conda environment as a Jupyter Lab kernel. 
 
@@ -66,7 +66,7 @@ This will create a directory on `$HOME/.local/share/jupyter/kernels/psana2_py37`
 }
 ```
 
-Or simply copy the file provided in this repository, and chage it accordingly to your needs: 
+Or simply copy the file provided in this repository, and change it accordingly to your needs: 
 
 ```
 cp $DIST/kernel.json $HOME/.local/share/jupyter/kernels/psana2_py37
